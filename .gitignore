@@ -1,0 +1,49 @@
+# --- Node / frontend -------------------------------------------------------
+node_modules/
+dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Python / backend --------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+venv/
+.venv/
+env/
+ENV/
+*.egg-info/
+.mypy_cache/
+.ruff_cache/
+
+# --- Environment / secrets ---------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# --- IDE / editor -------------------------------------------------------------
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Operating system ----------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Build output --------------------------------------------------------------
+build/
+
+# --- Field Shift: regenerable pipeline logs (recreate with scripts/run_all.py) --
+reports/cleaning_log.json
+reports/master_log.json
+reports/data_quality_summary.csv
+reports/figures/

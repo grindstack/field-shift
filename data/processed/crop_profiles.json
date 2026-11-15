@@ -1,0 +1,321 @@
+{
+  "metadata": {
+    "pilot_district": "Sheikhupura, Punjab, Pakistan",
+    "compiled": "2026-11-15",
+    "description": "Research-derived crop reference for the Field Shift rotation decision engine. Not independently verified against primary sources by this pipeline; see 'sources' and 'evidence_level' on each crop.",
+    "companion_doc": "research/crop_reference.md",
+    "tags": {
+      "PW": "Punjab-wide information",
+      "SKP": "Sheikhupura-specific evidence",
+      "A": "derived or assessed, not stated directly by a source",
+      "U": "unverified or not found"
+    },
+    "abbreviations": {
+      "KSK": "Rice Research Institute, Kala Shah Kaku (Sheikhupura district)",
+      "CRS": "Punjab Crop Reporting Service",
+      "UCC": "Upper Chenab Canal"
+    },
+    "notes": [
+      "No crop water requirement figures in millimeters are included anywhere in this file; none were found from a reliable Punjab-specific source.",
+      "Single-trial findings (e.g. the 2007-08 KSK rotation trial) are tagged as such and must not be treated as district-wide guarantees."
+    ]
+  },
+  "crops": {
+    "basmati_rice": {
+      "name": "Basmati rice",
+      "growing_season": {
+        "season": "Kharif (summer)",
+        "scope": "PW",
+        "detail": "Planted roughly April-July, mostly harvested September-November."
+      },
+      "sowing_harvest_windows": [
+        {
+          "scope": "PW",
+          "detail": "Nursery should not be sown before about 20 May; transplanting should ideally finish by mid-July for grain quality.",
+          "confidence": "stated"
+        },
+        {
+          "scope": "PW",
+          "detail": "Early-maturing basmati (Basmati 385, Super Basmati, Basmati 2000) matures first week of November; older types third week of November.",
+          "confidence": "stated"
+        },
+        {
+          "scope": "SKP",
+          "detail": "KSK trial: Super Basmati transplanted 1 July, harvested before 18 November.",
+          "confidence": "stated",
+          "source": "https://thejaps.org.pk/manuscript/2012-japs-103.pdf"
+        },
+        {
+          "scope": "U",
+          "detail": "No primary department source found for basmati-specific nursery/transplant windows.",
+          "confidence": "unverified"
+        }
+      ],
+      "duration": {
+        "estimate": "~3.5-4.5 months in the field",
+        "scope": "A",
+        "confidence": "derived",
+        "basis": "Derived from sowing/harvest dates above, not directly measured.",
+        "alternate_figure": {
+          "value": "104 average sowing days (CRS, Sheikhupura basmati)",
+          "confidence": "unverified",
+          "note": "Column definition in CRS source is unclear."
+        }
+      },
+      "water_requirements": {
+        "relative_demand": "highest of the three crops",
+        "mm_values": null,
+        "mm_values_status": "U - not available; do not invent",
+        "guidance": [
+          {
+            "scope": "PW",
+            "detail": "About 30% of rice water use is for puddling and transplanting; direct seeding is estimated to save 15-20%."
+          },
+          {
+            "scope": "PW",
+            "detail": "A UCC-command modelling study projects 13-18 irrigations for rice vs 2-5 for wheat under future climate scenarios.",
+            "confidence": "model projection, not observed baseline"
+          }
+        ]
+      },
+      "local_suitability": {
+        "scope": "SKP",
+        "detail": "CRS 2024-25: 587,000 acres of rice, of which ~570,000 (~97%) is basmati. KSK soil: clay loam, pH 8.2, organic matter 0.67%.",
+        "context_pw": "The rice-wheat zone is Pakistan's main fine-basmati producer. Water tables are declining in rice-growing districts.",
+        "area_discrepancy": "An earlier source gives paddy area as 484,000 acres in 2020, vs 587,000 acres in CRS 2024-25. Unresolved - check CRS final estimates."
+      },
+      "evidence_level": "mixed: Punjab-wide agronomic guidance reasonably well sourced; Sheikhupura-specific evidence is one KSK trial plus CRS area stats; duration and transplant windows are derived, not measured locally",
+      "uncertainties": [
+        "No primary-source basmati-specific sowing/transplant calendar for Sheikhupura.",
+        "Water use in mm unavailable; irrigation-count figures are model projections.",
+        "Rice area figures disagree across sources (484,000 vs 587,000 acres)."
+      ],
+      "sources": [
+        "https://thejaps.org.pk/manuscript/2012-japs-103.pdf",
+        "https://crs-agripunjab.punjab.gov.pk/system/files/Sheikhpura.pdf",
+        "https://crs-agripunjab.punjab.gov.pk/system/files/GHG%20Emission%20Rice%20Crop%20Punjab%202024-25.pdf",
+        "https://www.dawn.com/news/1634626",
+        "https://aari.punjab.gov.pk/system/files/Glimpses%20of%20Rice%20Research%20Institute%2C%20KSK.pdf",
+        "https://artboulevard.org/items/3370506/",
+        "https://researcherslinks.com/current-issues/Reduced-Water-Use-and-Labor-Cost-and-Increased-Productivity-of-Direct-Seeded-Basmati-Rice-in-Punjab-Pakistan/14/1/2932",
+        "https://mdpi.com/2073-4395/11/10/2006/htm",
+        "https://www.mdpi.com/2071-1050/15/3/1768",
+        "https://thepdr.pk/index.php/pdr/article/download/1866/3447/3418"
+      ]
+    },
+    "wheat": {
+      "name": "Wheat",
+      "growing_season": {
+        "season": "Rabi (winter)",
+        "scope": "PW",
+        "detail": "Planted October-December, harvested April to mid-June."
+      },
+      "sowing_harvest_windows": [
+        {
+          "scope": "PW",
+          "detail": "Punjab Agriculture (Extension) department (Nov 2026) urges finishing irrigated sowing by 20 November.",
+          "confidence": "stated (primary department source)",
+          "source": "https://tribune.com.pk/story/2639395/timely-completion-of-wheat-sowing-stressed"
+        },
+        {
+          "scope": "PW",
+          "detail": "Optimum sowing ~1-25 November depending on zone; late sowing by 15 December.",
+          "confidence": "secondary/aggregator source, provenance unclear",
+          "source": "https://agrinfobank.com.pk/?p=64682"
+        },
+        {
+          "scope": "PW",
+          "detail": "In practice most sowing in the rice zone now falls late November-December because rice is harvested late.",
+          "confidence": "stated"
+        },
+        {
+          "scope": "PW",
+          "detail": "Harvest runs mid-April to end of May in the plains.",
+          "confidence": "stated"
+        },
+        {
+          "scope": "SKP",
+          "detail": "KSK trial: sown 16 November, harvested 3rd week of April.",
+          "confidence": "stated",
+          "source": "https://thejaps.org.pk/manuscript/2012-japs-103.pdf"
+        }
+      ],
+      "duration": {
+        "estimate": "~5 months",
+        "scope": "A",
+        "confidence": "derived",
+        "basis": "Derived from KSK trial (16 Nov sowing - 3rd week April harvest). Shorter or longer depending on actual sowing date."
+      },
+      "water_requirements": {
+        "relative_demand": "moderate",
+        "mm_values": null,
+        "mm_values_status": "U - not available; do not invent",
+        "guidance": [
+          {
+            "scope": "PW",
+            "detail": "Usually 3-4 irrigations: first 20-25 days after sowing (30-40 days in rice areas), then at booting and milking."
+          },
+          {
+            "scope": "PW",
+            "detail": "In the UCC command area the canal runs only in summer, so wheat depends on marginal-quality groundwater.",
+            "source": "https://inp.net.pk/news-detail/inp-wealthpk/indian-manipulation-of-chenab-waters-hits-wheat-crop-irrigation-in-punjab"
+          }
+        ]
+      },
+      "local_suitability": {
+        "scope": "SKP",
+        "detail": "CRS 2024-25: 561,000 acres of wheat. An earlier CRS-based report put it at 495,000 acres in 2020.",
+        "context_pw": "Late sowing is a recurring problem in the rice zone because rice is harvested late, compressing the wheat window.",
+        "area_discrepancy": "495,000 acres (2020) vs 561,000 acres (CRS 2024-25) - not reconciled."
+      },
+      "evidence_level": "Punjab-wide sowing guidance mixes a primary department statement (Nov 2026) with a secondary leaflet of unclear provenance; Sheikhupura-specific evidence is CRS area stats plus one KSK trial",
+      "uncertainties": [
+        "The 'optimum sowing window' relies partly on an aggregator leaflet copy, not a verified primary document.",
+        "Water use in mm unavailable.",
+        "Wheat area figures differ between 2020 and 2024-25 sources."
+      ],
+      "sources": [
+        "https://fews.net/asia/pakistan/special-report/may-2026",
+        "https://tribune.com.pk/story/2639395/timely-completion-of-wheat-sowing-stressed",
+        "https://agrinfobank.com.pk/?p=64682",
+        "https://www.dawn.com/news/216666",
+        "https://www.thenews.pk/print/1381951-early-wheat-sowing-gathers-momentum",
+        "https://lms.su.edu.pk/lesson/147/week-04-production-technology-of-major-field-crops-wheat-rice",
+        "https://inp.net.pk/news-detail/inp-wealthpk/indian-manipulation-of-chenab-waters-hits-wheat-crop-irrigation-in-punjab"
+      ]
+    },
+    "mungbean": {
+      "name": "Mungbean",
+      "growing_season": {
+        "season": "Spring pulse and Kharif pulse; also used as a short catch crop between wheat and rice",
+        "scope": "PW",
+        "detail": "Spring sowing 15 February-15 March; Kharif sowing June-July. AARI Pulses Research Institute promotes spring sowing and mung as a catch crop in rice-wheat systems."
+      },
+      "sowing_harvest_windows": [
+        {
+          "scope": "SKP",
+          "detail": "KSK trial: sown 4th week of April (one week after wheat harvest), pods picked end of June.",
+          "confidence": "stated",
+          "source": "https://thejaps.org.pk/manuscript/2012-japs-103.pdf"
+        },
+        {
+          "scope": "PW",
+          "detail": "Otherwise follows the spring or Kharif sowing windows given in growing_season.",
+          "confidence": "stated"
+        }
+      ],
+      "duration": {
+        "estimate": "56-95 days depending on genotype and season",
+        "scope": "mixed",
+        "confidence": "stated (genotype trials, not all Sheikhupura-specific)",
+        "detail": {
+          "general_genotypes": "90% maturity in 56-91 days",
+          "niab_lines": "~80 days spring, 90-95 days summer",
+          "skp_ksk_trial": "65-70 days"
+        }
+      },
+      "water_requirements": {
+        "relative_demand": "lowest of the three crops",
+        "mm_values": null,
+        "mm_values_status": "U - not available; do not invent",
+        "guidance": [
+          {
+            "scope": "PW",
+            "detail": "Short duration means little irrigation is needed overall; typically 3-4 irrigations, first ~21 days after sowing, then ~15-day intervals."
+          }
+        ]
+      },
+      "local_suitability": {
+        "scope": "SKP",
+        "detail": "The 2024-25 CRS district profile has no moong area entry for Sheikhupura - area is zero or unreported.",
+        "context_pw": "Mungbean leads Kharif pulses in Punjab generally.",
+        "adoption_data": "U - none found for Sheikhupura"
+      },
+      "evidence_level": "weak at district level: duration figures mostly come from genotype trials not necessarily local; the only Sheikhupura field evidence is a single 2007-08 KSK rotation trial",
+      "uncertainties": [
+        "CRS records no moong area for Sheikhupura; cannot confirm current cultivation scale in the district.",
+        "No farmer-adoption data found.",
+        "Water use in mm unavailable."
+      ],
+      "sources": [
+        "https://aari.punjab.gov.pk/system/files/APRW%20Kharif%202018.pdf",
+        "https://aari.punjab.gov.pk/system/files/APRW%20Kharif%202016.pdf",
+        "https://www.dawn.com/news/242480/mungbean-a-rich-source-of-protein",
+        "https://www.pakbs.org/pjbot/PDFs/39(7)/PJB39(7)2451.pdf",
+        "https://www.pakbs.org/pjbot/abstracts/42(5)/20.html",
+        "https://thejaps.org.pk/manuscript/2012-japs-103.pdf"
+      ]
+    }
+  },
+  "scenarios": {
+    "baseline": {
+      "name": "rice -> wheat",
+      "sequence": ["basmati_rice", "wheat"],
+      "scope": "SKP",
+      "rationale": "Dominant local pattern. CRS 2024-25 shows 587,000 acres rice and 561,000 acres wheat on 768,064 cultivated acres. A 2018 irrigation study (Muridke tehsil) lists rice, wheat, sugarcane and fodder as the major crops. KSK trial authors describe rice-wheat as the commonly practiced pattern in this zone.",
+      "caveats": [
+        "Fodder alone covers 265,000 acres, so not every field follows rice-wheat.",
+        "District totals cannot show field-level rotations (U).",
+        "Rice area estimates disagree across sources (484,000 acres in 2020 vs 587,000 in CRS 2024-25)."
+      ],
+      "sources": [
+        "https://crs-agripunjab.punjab.gov.pk/system/files/Sheikhpura.pdf",
+        "https://assets.helvetas.org/Publications-PDFs/Drivers%20of%20irrigation%20inefficiencies%20Sheikhupura%20Pakistan.pdf",
+        "https://thejaps.org.pk/manuscript/2012-japs-103.pdf"
+      ]
+    },
+    "alternative": {
+      "name": "rice -> wheat -> mungbean",
+      "sequence": ["basmati_rice", "wheat", "mungbean"],
+      "status": "plausible but unproven at farm scale",
+      "condition": {
+        "description": "Mungbean insertion is only viable if the gap between wheat harvest and rice transplanting is long enough for a full mungbean cycle. This is NOT a fixed, always-available option - it must be evaluated per rotation instance using actual/predicted wheat harvest date and mungbean duration.",
+        "required_days": "65-70 (SKP KSK trial figure); up to ~95 for slower genotypes",
+        "available_window_example": {
+          "scope": "A",
+          "detail": "KSK reports ~11 weeks (~77 days) of fallow after an April wheat harvest. If wheat is sown late and harvested around 20 May, only ~4-6 weeks remain before a 20 June-1 July rice transplant - likely insufficient.",
+          "basis": "Derived from KSK trial dates and typical rice transplant timing; not a guaranteed figure."
+        }
+      },
+      "evidence_for": [
+        {
+          "scope": "SKP",
+          "detail": "2007-08 KSK trial of rice-wheat-mungbean: mungbean grain 0.78 t/ha; paddy 3.57 t/ha vs 3.34 t/ha without mungbean; wheat 2.63 t/ha vs 2.59 t/ha; cost-benefit ratio 1:1.78 vs 1:1.56. Paddy gain reported significant; wheat difference not. One season, one site - not generalizable on its own.",
+          "source": "https://thejaps.org.pk/manuscript/2012-japs-103.pdf"
+        },
+        {
+          "scope": "PW",
+          "detail": "A 55-70 day mungbean variety judged feasible in the pre-rice niche at NIAB Faisalabad (not Sheikhupura), with a reported 21% yield increase in the following wheat.",
+          "source": "https://www.pakbs.org/pjbot/PDFs/39(7)/PJB39(7)2451.pdf"
+        }
+      ],
+      "constraints": [
+        {
+          "type": "window",
+          "detail": "Available fallow time depends directly on actual wheat harvest date; see 'condition' above."
+        },
+        {
+          "type": "irrigation",
+          "detail": "April-June irrigation in this gap likely needs tubewell/groundwater where canals are summer-only (UCC); the Joyanwala distributary is non-perennial; canal opening dates are unverified (U)."
+        },
+        {
+          "type": "adoption",
+          "detail": "No farmer-adoption data found for Sheikhupura (U)."
+        }
+      ],
+      "modeling_guidance": "Evaluate this scenario conditionally per rotation instance (compare available fallow days to mungbean duration), not as a fixed alternative always offered alongside the baseline.",
+      "sources": [
+        "https://thejaps.org.pk/manuscript/2012-japs-103.pdf",
+        "https://www.pakbs.org/pjbot/PDFs/39(7)/PJB39(7)2451.pdf",
+        "https://assets.helvetas.org/Publications-PDFs/Drivers%20of%20irrigation%20inefficiencies%20Sheikhupura%20Pakistan.pdf"
+      ]
+    }
+  },
+  "known_gaps": [
+    "Basmati duration and nursery/transplant windows: no primary department source; both are derived.",
+    "Water in mm: no reliable Punjab-specific values for any of the three crops. A Multan CROPWAT paper is internally inconsistent (abstract gives rice 996.4 mm, discussion assigns the same figure to other crops) and is deliberately excluded. UCC irrigation counts are model projections, not measurements.",
+    "Wheat sowing guidance partly relies on an aggregator leaflet copy rather than a primary department document.",
+    "Sheikhupura-specific gaps: per-field rotation data, mungbean adoption, and local sowing dates beyond the single KSK trial are unavailable.",
+    "Area figures: rice and wheat acreage disagree between 2020 sources and CRS 2024-25; unresolved."
+  ]
+}
