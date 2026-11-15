@@ -3,12 +3,6 @@
 A transparent, rule-based crop rotation decision-support tool for a pilot
 district in Punjab, Pakistan. Built for NASA Space Apps.
 
-> **AI assistance disclosure:** _[Placeholder — describe here which parts of
-> this project (research synthesis, data pipeline, decision-engine
-> specification, backend/frontend implementation, documentation) were
-> produced with AI assistance, and how outputs were reviewed and verified
-> before use.]_
-
 ## Project overview
 
 Field Shift compares two crop rotation plans for a rice-wheat field in
