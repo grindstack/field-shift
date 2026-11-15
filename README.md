@@ -1,4 +1,4 @@
-# Field Shift
+# Field Shift: Smarter Crop Rotation 
 
 A transparent, rule-based crop rotation decision-support tool for a pilot
 district in Punjab, Pakistan. Built for NASA Space Apps.
